@@ -1,0 +1,35 @@
+/* Set font and basic styling */
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(28, 28, 28, 1);
+    color: white; 
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: transparent; /* Completely transparent navbar */
+    padding: 10px 20px;
+    display: flex;
+    justify-content: flex-start; /* Align navbar items to the left */
+}
+
+.nav-item {
+    text-decoration: none;
+    color: white; /* Navbar text color */
+    margin-right: 15px; /* Spacing between links */
+    font-size: 18px;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+/* Make Home bold */
+.nav-item:first-child {
+    font-weight: bold; /* Make Home bold */
+}
+
+/* Hover effect */
+.nav-item:hover {
+    color: #9FE0EE; /* Change color on hover */
+}
