@@ -13,13 +13,20 @@ body {
     padding: 10px 20px;
     display: flex;
     justify-content: flex-start; /* Align navbar items to the left */
+
+}
+.navbar {
+    justify-content: space-between; /* Space between Home and other items */
 }
 
+.navbar .nav-item:first-child {
+    margin-right: auto; /* Push Home to the left */
+}
 .nav-item {
     text-decoration: none;
     color: white; /* Navbar text color */
     margin-right: 15px; /* Spacing between links */
-    font-size: 18px;
+    font-size: 25px;
     transition: color 0.3s ease, border-bottom 0.3s ease;
     border-bottom: 2px solid transparent;
 }
@@ -33,3 +40,31 @@ body {
 .nav-item:hover {
     color: #9FE0EE; /* Change color on hover */
 }
+
+.container {
+    max-width: 1200px;
+    margin: float left;
+    padding: 20px;
+    margin-top: 250px;
+}
+
+/* Ptext is the text under the h1 title text */
+.ptext {
+    font-size: 18px;
+    margin-top: 0px;
+    font-family: 'Helvetica Neue Light', Arial, sans-serif;
+    opacity: 0.85;
+}
+
+/* Sterren bewegen */
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Send canvas to the back */
+  }
+
+ 
