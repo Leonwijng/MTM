@@ -25,8 +25,8 @@ body {
 .nav-item {
     text-decoration: none;
     color: white; /* Navbar text color */
-    margin-right: 15px; /* Spacing between links */
-    font-size: 25px;
+    margin-right: 20px; /* Spacing between links */
+    font-size: 20px;
     transition: color 0.3s ease, border-bottom 0.3s ease;
     border-bottom: 2px solid transparent;
 }
@@ -39,6 +39,7 @@ body {
 /* Hover effect */
 .nav-item:hover {
     color: #9FE0EE; /* Change color on hover */
+    
 }
 
 .container {
@@ -56,6 +57,24 @@ body {
     opacity: 0.85;
 }
 
+.distance-info-container {
+    margin-left: 83%;
+    padding: 20px;
+    margin-top: -250px;
+  }
+  
+  .distance-info {
+    font-size: 28px;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #9FE0EE;
+  }
+
+  .afstand {
+    font-size: 25px;
+    font-family: 'Helvetica Neue Light', Arial, sans-serif;
+    opacity: 0.9;
+    color: #CE845E;
+  }
 /* Sterren bewegen */
 canvas {
     display: block;
@@ -67,4 +86,4 @@ canvas {
     z-index: -1; /* Send canvas to the back */
   }
 
- 
+
