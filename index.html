@@ -1,22 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mission to Mars</title>
     <link rel="stylesheet" href="style.css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-
-
 </head>
+
 <body>
-    
-
-
-
     <canvas id="space"></canvas>
 
-    
     <nav class="navbar">
         <a href="#" class="nav-item">Home</a>
         <a href="#" class="nav-item">Vluchtinfo</a>
@@ -26,58 +21,55 @@
         <a href="#" class="nav-item">Bibliotheek</a>
     </nav>
 
-    
-
     <div class="container">
-        <h1>MISSION TO <span style="color: #CE845E;">MARS</span></h1>
-        <h2>BEGIN JOUR YOURNEY <span style="color: #CE845E; text-decoration: underline;">BEYOND</span> <span style="color: #9FE0EE;">EARTH</span></h2>
-        
-        <p class ="ptext">Alles wat je nodig hebt tijdens je reis naar Mars binnen handbereik</p>
-        <p class ="ptext">Navigeren, ontdekken en leren over je reis en het ruimteschip </p>
+        <h1>
+            MISSION TO <span style="color: #CE845E;">MARS</span>
+        </h1>
+
+        <h2>
+            BEGIN JOUR YOURNEY <span style="color: #CE845E; text-decoration: underline;">BEYOND</span>
+            <span style="color: #9FE0EE;">EARTH</span>
+        </h2>
+
+        <p class="ptext">Alles wat je nodig hebt tijdens je reis naar Mars binnen handbereik</p>
+        <p class="ptext">Navigeren, ontdekken en leren over je reis en het ruimteschip </p>
     </div>
 
     <div class="container distance-info-container">
+
         <div class="distance-info">
+
             <p><strong>AFSTAND TE GAAN:</strong></p>
             <p class="afstand"> 192mln. km</p>
 
-            <p><strong>AFSTAND GELEGD:</strong></p>
+            <p><strong>AFSTAND AFGELEGD:</strong></p>
             <p class="afstand"> 38mln. km</p>
-           
+
         </div>
     </div>
 
-<div class="centered-container">
-    
+    <div class="centered-container">
 
-    <model-viewer 
-    src="mars/scene.gltf" 
-    alt="3D-model van Mars" 
-    auto-rotate  
-    camera-controls
-    style="width: 100%; height: 750px;">
+        <model-viewer src="mars/scene.gltf" alt="3D-model van Mars" auto-rotate camera-controls
+            style="width: 100%; height: 750px;">
+        </model-viewer>
 
-    </model-viewer>
+    </div>
 
-</div>
-
-<style>
-    .centered-container {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        padding: 20px;
-        width: 80%;
-        height: 80%;
-    }
-</style>
-  
-      
-
+    <style>
+        .centered-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            width: 80%;
+            height: 80%;
+        }
+    </style>
 
     <script src="script.js"></script>
 
-
 </body>
+
 </html>

@@ -57,6 +57,32 @@ function animate() {
 initStars();
 animate();
 
+// Text afstanden update
+let distanceToGo = 192;
+let distanceCovered = 38;
 
+function updateDistances() {
+  distanceToGo -= 1;
+  distanceCovered += 1;
 
+  document.querySelector('.distance-info .afstand:nth-child(2)').textContent = `${distanceToGo}mln. km`;
+  document.querySelector('.distance-info .afstand:nth-child(4)').textContent = `${distanceCovered}mln. km`;
 
+  // DIT IS VOOR TESTEN IN CONSOLE OF INTERVAL WERKT
+  console.log(`Veranderd naar: AfstandTeGaan = ${distanceToGo}mln. km, AfstandAfgelegd = ${distanceCovered}mln. km`);
+
+  setRandomInterval();
+}
+
+function setRandomInterval() {
+  const intervals = [7000, 10000, 15000];
+  const randomInterval = intervals[Math.floor(Math.random() * intervals.length)];
+  
+  // DIT IS VOOR TESTEN IN CONSOLE OF INTERVAL WERKT
+  console.log(`Volgende afstand change in ${randomInterval / 1000} seconden`);
+
+  setTimeout(updateDistances, randomInterval);
+}
+
+// Begint interval
+setRandomInterval();
